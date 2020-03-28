@@ -4,11 +4,10 @@ import { Server, IncomingMessage, ServerResponse } from 'http';
 import { ServiceConfig, ServiceRoute } from './interfaces';
 
 
-import mongoose from 'mongoose';
+import * as mongoose from 'mongoose';
 
-import logger from 'morgan';
-import fastify from 'fastify';
-import cors from 'cors';
+import * as fastify from 'fastify';
+import * as cors from 'cors';
 
 export class BaseMicroService {
 

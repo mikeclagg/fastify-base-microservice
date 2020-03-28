@@ -1,4 +1,4 @@
-import fastify from 'fastify';
+import { RequestHandler, DefaultQuery, DefaultParams, DefaultHeaders } from 'fastify';
 import { IncomingMessage, ServerResponse } from 'http';
 
 export interface ServiceConfig {
@@ -9,5 +9,5 @@ export interface ServiceConfig {
 export interface ServiceRoute {
     path: string;
     method: string;
-    fn: fastify.RequestHandler<IncomingMessage, ServerResponse, fastify.DefaultQuery, fastify.DefaultParams, fastify.DefaultHeaders, any>;
+    fn: RequestHandler<IncomingMessage, ServerResponse, DefaultQuery, DefaultParams, DefaultHeaders, any>;
 };
