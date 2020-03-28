@@ -1,0 +1,14 @@
+FROM node:latest
+
+RUN mkdir -p /usr/src/app
+
+WORKDIR /usr/src/app
+
+# ENV NODE_ENV=production
+COPY package.json /usr/src/app/
+RUN npm i
+COPY . /usr/src/app/
+
+EXPOSE 4000
+
+CMD [ "npx", "nodemon", "-x", "ts-node", "src/index.ts" ]
