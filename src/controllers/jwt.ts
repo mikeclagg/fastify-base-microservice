@@ -1,8 +1,8 @@
 import jwt from 'jwt-simple';
 import moment from 'moment';
-import {SECRET_KEY} from '../constants';
 
-const secret = SECRET_KEY;
+
+const secret = 'SECRET_KEY';
 
 export function createToken(userId: number, email: string) {
     const payload = {
