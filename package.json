@@ -1,5 +1,5 @@
 {
-  "name": "fastify-typescript-docker-rest-api",
+  "name": "fastify-base-microservice",
   "version": "1.0.0",
   "description": "Starter project for a fast, simple and clean RESTful API",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miqrc/fastify-typescript-docker-rest-api.git"
+    "url": "git+https://github.com/belikemike/fastify-base-microservice.git"
   },
   "keywords": [
     "fastify",
