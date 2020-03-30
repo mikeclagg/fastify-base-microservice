@@ -28,9 +28,6 @@
     "rest",
     "api"
   ],
-  "post-commit": [
-    "patch"
-  ],
   "author": "Miquel Ruiz <miqrch@gmail.com>",
   "license": "MIT",
   "dependencies": {
