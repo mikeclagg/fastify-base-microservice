@@ -1,29 +1,15 @@
-import { readFileSync } from 'fs';
-
 import { Server, IncomingMessage, ServerResponse } from 'http';
 import { ServiceConfig, ServiceRoute } from './interfaces';
 
-
-import * as mongoose from 'mongoose';
-
-import * as fastify from 'fastify';
-import * as cors from 'cors';
+import fastify from 'fastify';
+import cors from 'cors';
 
 export class BaseMicroService {
 
     public app: fastify.FastifyInstance<Server, IncomingMessage, ServerResponse>;
 
     constructor(private cfg: ServiceConfig) {
-        this.connectDb();
-        this.app = fastify({ ignoreTrailingSlash: true });
-    }
-
-    async connectDb() {
-        try {
-            await mongoose.connect('mongodb://mongo:27017/', {useNewUrlParser: true});
-        } catch(err) {
-            console.log(err);
-        }
+        this.app = fastify({});
     }
 
     public init(routes: any) {

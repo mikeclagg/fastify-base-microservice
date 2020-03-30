@@ -1,3 +1,5 @@
+#secrets
+secret.config.json
 # compiled output
 /dist
 /tmp
@@ -130,4 +132,3 @@ buck-out/
 *.jsbundle
 
 .jest/
-

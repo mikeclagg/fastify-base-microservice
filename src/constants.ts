@@ -1,4 +1,14 @@
-export const SECRET_KEY = 'MY_SUPERSECRET_SERVER_KEY';
+import { join } from 'path';
+import { readFileSync } from 'fs';
+let fileContents: any;
+let config: any;
+try {
+    fileContents = readFileSync(join(__dirname, ), 'utf-8');
+    config = JSON.parse(fileContents);
+} catch(err) {
+    throw err;
+}
+export const SECRET_KEY = config.SECRET_KEY;
 export const APP_NAME = 'fastify-typescript-docker-rest-api';
 export const SERVER_PORT = 4000;
 export const HTTP_PROTOCOL = 'http';
