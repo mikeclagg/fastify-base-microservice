@@ -13,7 +13,7 @@
     "start": "nodemon -x ts-node src/index.ts",
     "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec node --inspect=localhost:9229 -r ts-node/register ./src/index.ts",
     "postinstall": "node ./bin/postinstall",
-    "patch": "npm version patch"
+    "prepush": "npm version patch"
   },
   "repository": {
     "type": "git",
@@ -56,6 +56,6 @@
     "typescript": "^3.8.3"
   },
   "devDependencies": {
-    "post-commit": "0.0.1"
+    "@amazingandyyy/git-hooks": "^0.1.0"
   }
 }
