@@ -4,12 +4,8 @@ const md5 = require('md5');
 
 const init = config => {
   const filepath = join(__dirname, '../secret.config.json');
-  console.log(__dirname);
   try {
-    const func = writeFileSync(filepath, JSON.stringify(config, null, 2));
-    if(!func) {
-      console.log('file written');
-    }
+    writeFileSync(filepath, JSON.stringify(config, null, 2));
   } catch(err) {
     throw err;
   }
