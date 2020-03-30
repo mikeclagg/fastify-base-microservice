@@ -28,6 +28,7 @@
     "rest",
     "api"
   ],
+  "post-commit": "npm run patch",
   "author": "Miquel Ruiz <miqrch@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -53,6 +54,6 @@
     "typescript": "^3.8.3"
   },
   "devDependencies": {
-    "pre-commit": "^1.2.2"
+    "post-commit": "0.0.1"
   }
 }
