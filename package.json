@@ -1,6 +1,6 @@
 {
   "name": "fastify-base-microservice",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "prepublish": "tsc",
   "description": "Starter project for a fast, simple and clean RESTful API",
   "main": "index.ts",
@@ -28,7 +28,6 @@
     "rest",
     "api"
   ],
-
   "author": "Miquel Ruiz <miqrch@gmail.com>",
   "license": "MIT",
   "dependencies": {
