@@ -28,7 +28,10 @@
     "rest",
     "api"
   ],
-  "author": "Miquel Ruiz <miqrch@gmail.com>",
+  "author": "Mike Clagg <mikeclagg@gmail.com>",
+  "contributors": [
+    "Miquel Ruiz <miqrch@gmail.com>"
+  ],
   "license": "MIT",
   "dependencies": {
     "@types/bcrypt": "^3.0.0",
