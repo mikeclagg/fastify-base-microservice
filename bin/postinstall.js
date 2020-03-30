@@ -24,4 +24,3 @@ while (i < uidLen) {
 init({
   SECRET_KEY: secretKey
 });
-console.log(`secretKey added: ${secretKey}`);
