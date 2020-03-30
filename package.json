@@ -13,7 +13,7 @@
     "start": "nodemon -x ts-node src/index.ts",
     "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec node --inspect=localhost:9229 -r ts-node/register ./src/index.ts",
     "postinstall": "node ./bin/postinstall",
-    "upv": "npm version 1.0.7"
+    "patch": "npm version patch"
   },
   "repository": {
     "type": "git",
