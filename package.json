@@ -12,7 +12,8 @@
     "start:old": "npx tsc && node dist/index",
     "start": "nodemon -x ts-node src/index.ts",
     "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec node --inspect=localhost:9229 -r ts-node/register ./src/index.ts",
-    "postinstall": "node ./bin/postinstall"
+    "postinstall": "node ./bin/postinstall",
+    "upv": "npm version 1.0.7"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "rest",
     "api"
   ],
+
   "author": "Miquel Ruiz <miqrch@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -50,5 +52,8 @@
     "ts-node": "^8.8.1",
     "tslint": "^5.20.1",
     "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
   }
 }
