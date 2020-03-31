@@ -1,11 +1,12 @@
-import { join } from 'path';
 import { readFileSync } from 'fs';
+import { join } from 'path';
+
 let fileContents: any;
 let config: any;
 try {
-    fileContents = readFileSync(join(__dirname, ), 'utf-8');
+    fileContents = readFileSync(join(__dirname, '../secret.config.json'), 'utf-8');
     config = JSON.parse(fileContents);
-} catch(err) {
+} catch (err) {
     throw err;
 }
 export const SECRET_KEY = config.SECRET_KEY;
@@ -15,33 +16,31 @@ export const HTTP_PROTOCOL = 'http';
 export const HTTP_HOSTNAME = 'localhost';
 
 export enum URLS {
-    GOOGLE_VERIFY  = 'https://www.googleapis.com/oauth2/v3/tokeninfo'
+    GOOGLE_VERIFY  = 'https://www.googleapis.com/oauth2/v3/tokeninfo',
 }
 
 export const CCOLORS = {
-    Reset: '\x1b[0m',
-    Bright: '\x1b[1m',
-    Dim: '\x1b[2m',
-    Underscore: '\x1b[4m',
-    Blink: '\x1b[5m',
-    Reverse: '\x1b[7m',
-    Hidden: '\x1b[8m',
-
-    FgBlack: '\x1b[30m',
-    FgRed: '\x1b[31m',
-    FgGreen: '\x1b[32m',
-    FgYellow: '\x1b[33m',
-    FgBlue: '\x1b[34m',
-    FgMagenta: '\x1b[35m',
-    FgCyan: '\x1b[36m',
-    FgWhite: '\x1b[37m',
-
-    BgBlack: '\x1b[40m',
-    BgRed: '\x1b[41m',
-    BgGreen: '\x1b[42m',
-    BgYellow: '\x1b[43m',
-    BgBlue: '\x1b[44m',
-    BgMagenta: '\x1b[45m',
-    BgCyan: '\x1b[46m',
-    BgWhite: '\x1b[47m'
+    BgBlack: '\u001b[40m',
+    BgBlue: '\u001b[44m',
+    BgCyan: '\u001b[46m',
+    BgGreen: '\u001b[42m',
+    BgMagenta: '\u001b[45m',
+    BgRed: '\u001b[41m',
+    BgWhite: '\u001b[47m',
+    BgYellow: '\u001b[43m',
+    Blink: '\u001b[5m',
+    Bright: '\u001b[1m',
+    Dim: '\u001b[2m',
+    FgBlack: '\u001b[30m',
+    FgBlue: '\u001b[34m',
+    FgCyan: '\u001b[36m',
+    FgGreen: '\u001b[32m',
+    FgMagenta: '\u001b[35m',
+    FgRed: '\u001b[31m',
+    FgWhite: '\u001b[37m',
+    FgYellow: '\u001b[33m',
+    Hidden: '\u001b[8m',
+    Reset: '\u001b[0m',
+    Reverse: '\u001b[7m',
+    Underscore: '\u001b[4m',
 };

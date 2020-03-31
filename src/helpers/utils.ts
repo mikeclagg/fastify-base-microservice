@@ -5,8 +5,8 @@ export function getDate_yyyy_mm_dd(now ?: Date) {
         now = new Date();
     }
     const year = '' + now.getFullYear();
-    let month = '' + (now.getMonth() + 1); if (month.length == 1) { month = '0' + month; }
-    let day = '' + now.getDate(); if (day.length == 1) { day = '0' + day; }
+    let month = '' + (now.getMonth() + 1); if (month.length === 1) { month = '0' + month; }
+    let day = '' + now.getDate(); if (day.length === 1) { day = '0' + day; }
     return year + '-' + month + '-' + day;
 }
 
@@ -15,8 +15,8 @@ export function getDate_yyyymmdd(now ?: Date) {
         now = new Date();
     }
     const year = '' + now.getFullYear();
-    let month = '' + (now.getMonth() + 1); if (month.length == 1) { month = '0' + month; }
-    let day = '' + now.getDate(); if (day.length == 1) { day = '0' + day; }
+    let month = '' + (now.getMonth() + 1); if (month.length === 1) { month = '0' + month; }
+    let day = '' + now.getDate(); if (day.length === 1) { day = '0' + day; }
     return year + '' + month + '' + day;
 }
 

@@ -1,13 +1,14 @@
-import { RequestHandler, DefaultQuery, DefaultParams, DefaultHeaders } from 'fastify';
+import { DefaultHeaders, DefaultParams, DefaultQuery, RequestHandler } from 'fastify';
 import { IncomingMessage, ServerResponse } from 'http';
 
-export interface ServiceConfig {
+export interface IServiceConfig {
+    hostname: string;
     port: number;
     protocol: string;
-    hostname: string;
-};
-export interface ServiceRoute {
+}
+
+export interface IServiceRoute {
     path: string;
     method: string;
     fn: RequestHandler<IncomingMessage, ServerResponse, DefaultQuery, DefaultParams, DefaultHeaders, any>;
-};
+}

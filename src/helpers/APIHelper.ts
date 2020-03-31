@@ -13,8 +13,8 @@ export enum ApiMessages {
   'register_ok' = 'Register OK',
 }
 
-export interface ApiResponse {
-  status: string;
+export interface IApiResponse {
   message: string;
   result: any;
+  status: string;
 }
