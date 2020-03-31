@@ -1,6 +1,6 @@
 {
   "name": "fastify-base-microservice",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "prepublish": "tsc",
   "description": "Starter project for a fast, simple and clean RESTful API",
   "main": "index.ts",
