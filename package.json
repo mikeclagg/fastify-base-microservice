@@ -13,7 +13,7 @@
     "start:old": "npx tsc && node dist/index",
     "start": "nodemon -x ts-node src/index.ts",
     "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec node --inspect=localhost:9229 -r ts-node/register ./src/index.ts",
-    "postinstall": "node ./bin/postinstall",
+    "postinstall": "npx nodemon --exitcrash -x ts-node bin/postinstall.ts",
     "prepush": "npm version patch"
   },
   "repository": {
@@ -35,6 +35,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@k-foss/ts-esnode": "^1.3.1",
     "@types/bcrypt": "^3.0.0",
     "@types/body-parser": "^1.19.0",
     "@types/cors": "^2.8.6",
