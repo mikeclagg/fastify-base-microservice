@@ -1,4 +1,4 @@
-import cors from 'cors';
+// import * as cors from 'cors';
 import fastify from 'fastify';
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { IncomingMessage, Server, ServerResponse } from 'http';
@@ -41,18 +41,18 @@ export default class BaseMicroService {
         });
     }
 
-    public config() {
+    // public config() {
 
-        const options: cors.CorsOptions = {
-            allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'X-Access-Token'],
-            credentials: true,
-            methods: 'GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE',
-            preflightContinue: false,
-        };
+    //     const options: cors.CorsOptions = {
+    //         allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'X-Access-Token'],
+    //         credentials: true,
+    //         methods: 'GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE',
+    //         preflightContinue: false,
+    //     };
 
-        this.app.use('*', () => cors(options));
+    //     this.app.use('*', () => cors(options));
 
-        // this.app.use(logger('dev'));
-    }
+    //     // this.app.use(logger('dev'));
+    // }
 
 }
