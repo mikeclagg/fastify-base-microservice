@@ -2,7 +2,7 @@ import { IncomingMessage, ServerResponse } from 'http';
 import { FastifyRequest, FastifyReply } from 'fastify';
 import { ApiErrors, ApiMessages, ApiResponse } from '../helpers/APIHelper';
 
-export class BaseController {
+export default class BaseController {
 
   public ApiMessages = ApiMessages;
   public ApiErrors = ApiErrors;
