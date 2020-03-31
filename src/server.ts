@@ -4,7 +4,7 @@ import { ServiceConfig, ServiceRoute } from './interfaces';
 import fastify from 'fastify';
 import cors from 'cors';
 
-export class BaseMicroService {
+export default class BaseMicroService {
 
     public app: fastify.FastifyInstance<Server, IncomingMessage, ServerResponse>;
 
