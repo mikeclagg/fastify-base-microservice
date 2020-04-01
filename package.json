@@ -5,7 +5,6 @@
   "description": "Starter project for a fast, simple and clean RESTful API",
   "main": "index.ts",
   "types": "dist/index.d.ts",
-  "type": "module",
   "scripts": {
     "build": "npx tsc",
     "cleanup": "rm -rf dist && rm -rf node_modules",
