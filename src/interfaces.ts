@@ -5,6 +5,8 @@ export interface IServiceConfig {
     hostname: string;
     port: number;
     protocol: string;
+    ssl: boolean;
+    cors: any;
 }
 
 export interface IServiceRoute {

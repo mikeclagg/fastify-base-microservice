@@ -14,7 +14,14 @@ export enum ApiMessages {
 }
 
 export interface IApiResponse {
-  message: string;
   result: any;
   status: string;
+}
+
+export interface IApiErrorResponse {
+  error: {
+    name: string;
+    message: string;
+    type: string;
+  };
 }
