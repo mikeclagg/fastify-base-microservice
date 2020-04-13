@@ -1,3 +1,3 @@
-import BaseMicroService from './src/server';
+import { BaseMicroService } from './src/BaseMicroService';
 
 export default BaseMicroService;
